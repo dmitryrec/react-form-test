@@ -3,7 +3,8 @@ import './App.css';
 
 import { data } from './data';
 import TextInput from './components/text-input';
-import SelectInput from './components/select-input';
+import SelectInputBuyers from './components/select-input-buyers';
+import SelectInputUsers from './components/select-input-users'
 import Header from './components/header';
 
 export default class App extends Component {
@@ -40,8 +41,8 @@ export default class App extends Component {
       <div className='container'>
         <Header/>
         <form className='form-container'>
-          <SelectInput {...data}/>
-          <SelectInput {...data}/>
+          <SelectInputBuyers {...data}/>
+          <SelectInputUsers {...data}/>
           <TextInput onChange={this.handleInputChange} value={text1}/>
           <TextInput onChange={this.handleInputChange} value={text2}/>
           <TextInput onChange={this.handleInputChange} value={text3}/>

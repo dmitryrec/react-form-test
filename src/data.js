@@ -16,4 +16,14 @@ export const data = {
         'TestBuyer 14',
         'TestBuyer 15',
     ],
+    users: [
+        {
+            name: "Vanessa",
+            avatar: "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male-512.png"
+        },
+        {
+            name: "Car Title",
+            avatar: "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_female-512.png"
+        },
+    ]
 }

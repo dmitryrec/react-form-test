@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function SelectInput({ buyers}) {
+export default function SelectInputBuyers({ buyers }) {
     return (
-        <select>
+        <select className="select-input">
             {buyers.map(buyer => <option key={buyer}>{buyer}</option>)}
         </select>
     )
