@@ -15,12 +15,23 @@ export default class App extends Component {
   };
 
   handleInputChange = ({ target: {value} }) => {
-    this.setState( {
+    this.setState({
       text1: value,
       text2: value,
       text3: value,
     })
   };
+
+  handleReset = (e) => {
+    e.preventDefault();
+    const { text1, text2, text3 } = this.state;
+
+    this.setState({
+      text1: '',
+      text2: '',
+      text3: '',
+    })
+  }
 
   render () {
     const { text1, text2, text3 } = this.state;
@@ -33,7 +44,7 @@ export default class App extends Component {
           <TextInput onChange={this.handleInputChange} value={text1}/>
           <TextInput onChange={this.handleInputChange} value={text2}/>
           <TextInput onChange={this.handleInputChange} value={text3}/>
-          <button>Reset</button>
+          <button onClick={this.handleReset}>Reset</button>
           <button>Filter</button>
         </form>
       </div>
