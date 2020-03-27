@@ -1,14 +1,27 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  background: rgb(190, 190, 190);
+  background: rgb(234, 237, 238);
 }
 
 .form-container {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-block {
+  display: flex;
+} 
+
+.text-input{
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  height: 30px;
 }

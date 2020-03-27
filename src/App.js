@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 
 import { data } from './data';
-import TextInput from './components/text-input/text-input';
-import SelectInput from './components/select-input/select-input';
-import Header from './components/header/header';
+import TextInput from './components/text-input';
+import SelectInput from './components/select-input';
+import Header from './components/header';
 
 export default class App extends Component {
 
@@ -41,11 +41,14 @@ export default class App extends Component {
         <Header/>
         <form className='form-container'>
           <SelectInput {...data}/>
+          <SelectInput {...data}/>
           <TextInput onChange={this.handleInputChange} value={text1}/>
           <TextInput onChange={this.handleInputChange} value={text2}/>
           <TextInput onChange={this.handleInputChange} value={text3}/>
-          <button onClick={this.handleReset}>Reset</button>
-          <button>Filter</button>
+          <div className='btn-block'>
+            <button onClick={this.handleReset}>Reset</button>
+            <button>Filter</button>
+          </div>
         </form>
       </div>
       
