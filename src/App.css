@@ -8,17 +8,18 @@
   max-width: 1200px;
   margin: 0 auto;
   background: rgb(234, 237, 238);
+  padding: 15px;
 }
 
 .form-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .btn-block {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 10vw;
   height: 30px;
 } 
