@@ -15,6 +15,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid #d3d3d3;
+  background: #ffffff;
+  padding: 15px;
 }
 
 .btn-block {
@@ -26,7 +29,7 @@
 
 button {
   border-radius: 5px;
-  border: 1px solid lightgrey;
+  border: 1px solid #112447;
   width: 4vw;
   min-width: 50px;
 
@@ -34,7 +37,7 @@ button {
 
 .text-input, .select-input{
   border-radius: 5px;
-  border: 1px solid lightgrey;
+  border: 1px solid #d3d3d3;
   height: 30px;
   width: 10vw;
   min-width: 50px;
@@ -46,4 +49,14 @@ header {
 
 .home-img {
   width: 20px;
+}
+
+.reset-btn {
+  color: #000000;
+  background: #ffffff;
+}
+
+.filter-btn {
+  color: #ffffff;
+  background: #112447;
 }
