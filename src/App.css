@@ -28,6 +28,7 @@ button {
   border-radius: 5px;
   border: 1px solid lightgrey;
   width: 4vw;
+  min-width: 50px;
 
 }
 
@@ -36,4 +37,13 @@ button {
   border: 1px solid lightgrey;
   height: 30px;
   width: 10vw;
+  min-width: 50px;
+}
+
+header {
+  padding-bottom: 20px;
+}
+
+.home-img {
+  width: 20px;
 }
